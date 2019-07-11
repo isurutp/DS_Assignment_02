@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/add" name="AddUserApi" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET" uri-template="/add">
+        <inSequence>
+            <log description="Add"/>
+            <send>
+                <endpoint key="AddUserEp"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+</api>

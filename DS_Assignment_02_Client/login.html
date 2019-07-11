@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="mainJS.js"></script>
+</head>
+<body>
+
+<h2><a href="login.html">Train Ticket Reservation</a></h2>
+
+    <form class="loginForm" id="login" onsubmit="return validateLogin()" action="book.html" method="get">
+
+        <h2>Login</h2>
+
+        <p><input type="text" id="uName" class="inputCSS" placeholder=" Username"></p>
+        <p><input type="password" id="passw" class="inputCSS" placeholder=" Password"></p>
+        <br/>
+
+        <button type="submit" class="blueBttn">Login</button>
+
+        <br/><br/>
+        <p style="font-size: 8pt">Don't have an account? <a href="register.html">Register</a> </p>
+    </form>
+
+</body>
+</html>

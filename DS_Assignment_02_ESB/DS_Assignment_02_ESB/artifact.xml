@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="AddUserEp" groupId="com.example.DS_Assignment_02_ESB.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/AddUserEp.xml</file>
+    </artifact>
+    <artifact name="GetUserEp" groupId="com.example.DS_Assignment_02_ESB.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/GetUserEp.xml</file>
+    </artifact>
+    <artifact name="PaymentEp" groupId="com.example.DS_Assignment_02_ESB.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/PaymentEp.xml</file>
+    </artifact>
+    <artifact name="AddUserApi" groupId="com.example.DS_Assignment_02_ESB.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/AddUserApi.xml</file>
+    </artifact>
+    <artifact name="GetUserApi" groupId="com.example.DS_Assignment_02_ESB.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/GetUserApi.xml</file>
+    </artifact>
+    <artifact name="PaymentApi" groupId="com.example.DS_Assignment_02_ESB.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/PaymentApi.xml</file>
+    </artifact>
+</artifacts>

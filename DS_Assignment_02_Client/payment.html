@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment</title>
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="mainJS.js"></script>
+</head>
+<body>
+
+<h2><a href="login.html">Train Ticket Reservation</a></h2>
+<form class="loginForm" id="payment" onsubmit="return validatePayment()" action="book.html" method="get">
+
+    <h2>Make Payment</h2>
+
+    <p><input type="text" id="mail" class="inputCSS" placeholder=" E-mail"></p>
+    <p><input type="text" id="phone" class="inputCSS" placeholder=" Phone"></p>
+    <p><input type="text" id="name" class="inputCSS" placeholder=" Name"></p>
+    <br/>
+
+    <p>Select your Payment method :</p>
+    <div>
+    <input type="radio" id="card" name="method" value="card" > <label for="card"> Card Payment </label><br>
+        <div class="reveal-if-active">
+            <p><input type="text" id="cardNum" class="inputCSS" placeholder=" Card Number"></p>
+            <p><input type="text" id="expDate" class="inputCSS" placeholder=" Expiry Date"></p>
+            <p><input type="text" id="ccv" class="inputCSS" placeholder=" CCV"></p>
+        </div>
+    </div><br/>
+
+    <div>
+    <input type="radio" id="mobile" name="method" value="mobile"> <label for="mobile"> Dialog Mobile </label> <br>
+        <div class="reveal-if-active">
+            <p><input type="text" id="dialog" class="inputCSS" placeholder=" Dialog mobile number"></p>
+            <p><input type="password" id="pin" class="inputCSS" placeholder=" Pin"></p>
+        </div>
+    </div><br/>
+
+    <div>
+        <input type="checkbox" id="nic" name="gov" value="nic"> <label for="nic"> Government Employee </label> <br>
+        <div class="reveal-if-active">
+            <p><input type="text" id="nicNum" class="inputCSS" placeholder=" NIC"></p>
+        </div>
+    </div><br/>
+
+
+    <br/><br/>
+    <button class="blueBttn">Submit</button>
+
+</form>
+
+
+
+</body>
+</html>

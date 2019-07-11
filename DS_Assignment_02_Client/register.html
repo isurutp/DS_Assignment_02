@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="mainJS.js"></script>
+</head>
+<body>
+
+<h2><a href="login.html">Train Ticket Reservation</a></h2>
+<form class="loginForm" id="signUp" onsubmit="return validateRegister()" action="login.html" method="get">
+
+    <h2>Register</h2>
+
+    <p><input type="text" id="uName" class="inputCSS" placeholder=" Username"></p>
+    <p><input type="text" id="email" class="inputCSS" placeholder=" E-mail"></p>
+    <p><input type="text" id="phone" class="inputCSS" placeholder=" Phone"></p>
+    <p><input type="password" id="passw" class="inputCSS" placeholder=" Password"></p>
+    <p><input type="password" id="rePassw" class="inputCSS" placeholder=" Reenter Password"></p>
+
+    <br/>
+    <button class="blueBttn" type="submit">Register</button>
+    <br/><br/>
+    <p style="font-size: 8pt">Already have an account? <a href="login.html">Login</a> </p>
+
+</form>
+</body>
+</html>

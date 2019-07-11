@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reserve</title>
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="mainJS.js"></script>
+</head>
+<body>
+<h2><a href="login.html">Train Ticket Reservation</a></h2>
+
+<form class="loginForm" id="reservation" onsubmit="return validateBook()" action="payment.html" method="get">
+
+    <h2>Reserve Tickets</h2>
+
+    <p/>Select route</p>
+    <select id="train" class="inputCSS" onchange="selectTicket()">
+        <option value="badulla">Colombo to Badulla</option>
+        <option value="avisawella">Colombo to Avisawella</option>
+        <option value="matale">Peradeniya to Matale</option>
+    </select>
+    <P>Price per ticket : Rs.<text id="price">10</text></P><br/>
+
+    <p>Number of tickets</p>
+    <p><input type="number" id="ticket" class="inputCSS" value="1" min="1" max="15" onchange="totalPrice()" ></p>
+    <p>Total price : Rs.<text id="tPrice">10</text></p>
+    <br/>
+
+    <button type="submit" class="blueBttn">Book</button>
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+h2 {
+    color: #565A5D;
+}
+
+body {
+    font-family: "Courier";
+}
+
+p {
+    margin: 3px;
+}
+
+.loginForm {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.inputCSS {
+    height: 30px;
+    width: 250px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 0.5px ;
+}
+
+.blueBttn {
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: #15AFA8;
+    color: black;
+    font-family: Courier;
+    border-style: hidden;
+}
+
+
+a {
+    text-decoration: none;
+    color: #565A5D;
+}
+
+.reveal-if-active {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+}
+
+input[type="checkbox"]:checked ~ .reveal-if-active,
+input[type="radio"]:checked ~ .reveal-if-active {
+    opacity: 1;
+    max-height: 100px;
+    overflow: visible;
+}
+
